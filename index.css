@@ -9,37 +9,25 @@ body {
 
 header {
     background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #333;
-
+    color: white;
+    padding: 15px 0;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-nav li {
-    margin-right: 20px;
+nav ul li {
+    margin: 0 15px;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 section {
@@ -126,17 +114,14 @@ footer {
     margin-top: 0;
 }
 
-#projects ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-#projects li {
-    margin: 20px;
+#projets ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    justify-content: flex-start; /* Distributes items evenly */
+    gap: 20px; /* Adds space between items */
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes bullet points */
 }
 
 .project-card {
@@ -144,16 +129,19 @@ footer {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 200px;
-    height: 250px;
+    width: 220px; /* Slightly larger for better spacing */
+    height: 280px; /* Increased height for content flexibility */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Ensures spacing inside the card */
     cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
 }
 
 .project-card:hover {
+    transform: translateY(-5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
