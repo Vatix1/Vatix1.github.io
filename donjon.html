@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural World & Donjon</title>
+    <link rel="stylesheet" href="fleuriste.css">
+</head>
+<body>
+    <header>
+        <button class="back-button">Retour aux projets</button>
+    </header>
+    <main>
+        <h1>Génération Procédurale – Monde & Donjon</h1>
+
+        <p>
+            Dans ce projet, nous avons exploré les techniques de génération procédurale pour créer à la volée un monde ouvert 
+            et des donjons modulaires. L’objectif était de produire des environnements variés et cohérents sans intervention manuelle.
+        </p>
+
+        <img src="./image/map.png" alt="map" width="50%" height="auto">
+        
+
+
+        <h2>Technologies utilisées</h2>
+        <ul>
+            <li>Moteur de jeu : Unreal Engine 5</li>
+            <li>Langage de programmation : C++</li>
+            <li>Algorithmes de génération : Perlin Noise, GMG (Greedy Modular Generation)</li>
+            <li>Système de modules : acteurs modélisés en Blueprint et C++</li>
+        </ul>
+
+        <h2>Fonctionnalités principales</h2>
+        <ul>
+            <li>Monde ouvert infini basé sur du Perlin Noise</li>
+            <li>Donjons créés via BSP, divisés en salles reliées par des pièces aléatoires</li>
+            <li>Placement automatique d’objets</li>
+        </ul>
+
+        <img src="./image/donjon.png" alt="map" width="50%" height="auto">
+
+        <h2>Défis techniques et solutions</h2>
+        <ul>
+            <li>**Implemetation** : apprentissage de techniques de génération procédural</li>
+            <li>**Variété des donjons** : création de templates de salles et de corridors, assemblés aléatoirement tout en garantissant la connectivité.</li>
+        </ul>
+
+        <h2>Compétences développées</h2>
+        <ul>
+            <li>Maitrise des algorithmes de noise (Perlin, Simplex) pour la génération de terrains</li>
+            <li>Implémentation du GMG pour la création modulable de donjons</li>
+            <li>Création de Blueprints couplés à du C++</li>
+        </ul>
+
+        <h3><a href="https://github.com/Ruru-TheBigY/Groupe_7_Projet_V2" target="_blank">Voir le projet sur GitHub</a></h3>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    </main>
+    <script src="fleuriste.js"></script>
+</body>
+</html>
